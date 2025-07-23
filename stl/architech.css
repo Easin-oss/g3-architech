@@ -18,17 +18,22 @@
     border: none;
 }
 
-main {
+/* main {
     max-width: 1260px;
+    margin: 0 auto;
+} */
+.shared-width{
+    max-width:1080px;
     margin: 0 auto;
 }
 
-main>section {
+/* main>section {
     margin-top: 130px;
-}
+} */
 
 .display-flex {
     display: flex;
+    
 
 }
 
@@ -81,11 +86,11 @@ main>section {
     font-weight: 500;
 }
 
-.navbar,
+/* .navbar,
 .banner {
     max-width: 1440px;
     margin: 0 auto;
-}
+} */
 
 /* banner related style*/
 .banner-content {
@@ -103,10 +108,15 @@ main>section {
 .banner-img {
     width: 100%;
 }
+.spacing{
+    margin-top: 130px;
+}
 
 /*team and feature*/
 .teams {
     align-items: center;
+    
+    gap:73px;
 
 }
 
@@ -116,10 +126,7 @@ main>section {
     gap: 24px;
 }
 
-.our-features {
-    margin-left: 130px;
-    max-width: 530px;
-}
+
 
 
 #list {
@@ -127,9 +134,9 @@ main>section {
 }
 
 /*feature related style*/
-.features {
+/* .features {
     gap: 140px;
-}
+} */
 
 #feature-section-titel {
     border-left: 5px solid #FF900E;
@@ -174,9 +181,9 @@ main>section {
 
 }
 
-.featured-architect {
+/* .featured-architect {
     width: 100%;
-}
+} */
 
 
 
@@ -239,13 +246,10 @@ main>section {
 .footer-bg {
     background-color: rgba(255, 244, 231, 1);
     border-radius: 10px;
-    padding: 60px;
-    margin-top: 130px;
-    margin-bottom: 216px;
-    text-align: center;
-
-    
-    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 160px;
+    text-align: center; 
 }
 
 
@@ -257,6 +261,10 @@ main>section {
     .teams,
     .features {
         flex-direction: column;
+        width: 100%;
+    }
+    .bg-light{
+        width:100%;
     }
 
     .team-img-container,
@@ -289,7 +297,7 @@ main>section {
 }
 
 /*medium size device*/
-@media screen and (min-width:576px)and (max-width:992) {
+@media screen and (min-width:576px)and (max-width:992px) {
 
     .teams,
     .features {
